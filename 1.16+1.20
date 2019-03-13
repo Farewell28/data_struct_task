@@ -1,0 +1,74 @@
+
+#include "pch.h"
+#include <iostream>
+#define N 20
+
+
+int main()
+{
+	int X, Y, Z;
+
+	scanf_s("%d,%d,%d", &X, &Y, &Z);
+	if (X >= Y)
+	{
+		if (X >= Z)
+		{
+			if (Y >= Z)
+			{
+				printf("%d,%d,%d", X, Y, Z);
+			}
+ 			else
+			{
+				printf("%d,%d,%d", X, Z, Y);
+			}
+		}
+		else
+		{
+			printf("%d,%d,%d", Z,X,Y);
+		}
+	}
+	else
+	{
+		if (Y >= Z)
+		{
+			if (X >= Z)
+		  {
+				printf("%d,%d,%d", Y, X, Z);
+			}
+			else
+			{
+				printf("%d,%d,%d", Y, Z, X);
+			}
+		}
+		else
+		{
+			printf("%d,%d,%d", Z, Y, X);
+		}
+  }
+	return 0;
+}
+
+
+int main()
+{
+	int x,n,i,P;
+	int a[N];
+	printf("输入变量的值");
+	scanf("%d", &x);
+	printf("输入多项式系数");
+	scanf("%d", &n);
+	printf("依次输入多项式系数");//以上语句执行次数均为一次
+	for (i = 0; i < n; i++)
+	{
+		scanf("%d", &a[i]);//执行次数为n次
+	}
+	P = a[n - 1];
+	for (i = n; i > 0; i--)
+	{
+		P = a[i - 1] + x * P;//
+	}
+ printf（"%d", P）;
+ return 0;
+}
+
+
