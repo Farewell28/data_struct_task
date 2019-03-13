@@ -62,13 +62,13 @@ int main()
 	{
 		scanf("%d", &a[i]);//执行次数为n次
 	}
-	P = a[n - 1];
+	P = a[n - 1];//执行次数为一次
 	for (i = n; i > 0; i--)
 	{
-		P = a[i - 1] + x * P;//
+		P = a[i - 1] + x * P;//执行次数为n次
 	}
- printf（"%d", P）;
+ printf（"%d", P）;//执行次数为一次
  return 0;
-}
+}//算法时间复杂度为O（n）
 
 
