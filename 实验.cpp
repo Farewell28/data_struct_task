@@ -83,11 +83,13 @@ int start(Linklist &k, int n, int firstmima)
 #define N 30
 void main()
 {
-	int a[N], n = 0, i = 0, firstmima;
+	int a[N], m, n = 0, i = 0, firstmima;
 	Linklist head;
-	printf("请输入第一个密码值\n");
+	printf("请输入报数上限\n");
+	scanf_s("%d", &m);
+	printf("请输入第一个密码值(不超过%d\n",m);
 	scanf_s("%d", &firstmima);
-	printf("请按顺序输入各游戏者密码,以0结尾");
+	printf("请按顺序输入各游戏者密码(不超过%d,以0结尾",m);
 	for (n = 0; n < N; n++)
 	{
 		scanf_s("%d",&a[n]);
